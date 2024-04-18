@@ -1,0 +1,159 @@
+.pinglun {
+  width: 750rpx;
+  height: 100vh;
+  background-color: #F7F7F7;
+  position: relative;
+}
+.pinglun .yj_img {
+  width: 750rpx;
+  height: 520rpx;
+}
+.pinglun .yj_img image {
+  width: 100%;
+  height: 100%;
+}
+.pinglun .conent {
+  display: flex;
+  width: 750rpx;
+  height: 200rpx;
+  background-color: white;
+}
+.pinglun .conent .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 30rpx;
+  margin-top: 18rpx;
+}
+.pinglun .conent .img image {
+  width: 200rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+}
+.pinglun .conent .right {
+  margin-left: 30rpx;
+  font-size: 32rpx;
+}
+.pinglun .conent .right .title {
+  display: flex;
+  align-items: center;
+  width: 300rpx;
+  height: 50rpx;
+  font-weight: bold;
+  margin-top: 18rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.pinglun .conent .right .msg {
+  width: 300rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.pinglun .conent .time {
+  color: gray;
+  margin-top: 120rpx;
+  margin-right: 15rpx;
+}
+.pinglun .title3 {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-left: 30rpx;
+}
+.pinglun .ping {
+  width: 750rpx;
+  background-color: white;
+  height: 360rpx;
+}
+.pinglun .ping .item {
+  display: flex;
+  align-items: center;
+  width: 690rpx;
+  height: 200rpx;
+  margin-left: 30rpx;
+  border-bottom: 1px solid #EDEDED;
+  font-size: 32rpx;
+}
+.pinglun .ping .item image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10000rpx;
+}
+.pinglun .ping .item .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120rpx;
+  width: 340rpx;
+  margin-left: 20rpx;
+}
+.pinglun .ping .item .left .msg {
+  width: 340rpx;
+  color: gray;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.pinglun .ping .item .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120rpx;
+}
+.pinglun .ping .item .right .star .icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+.pinglun .ping .item .right .shijian {
+  color: #BCBFBE;
+  margin-left: 22rpx;
+}
+.pinglun .wu {
+  width: 750rpx;
+  height: 200rpx;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+}
+.pinglun .tools {
+  position: absolute;
+  bottom: 0;
+  width: 750rpx;
+  height: 130rpx;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.pinglun .tools .input {
+  display: flex;
+  align-items: center;
+  width: 520rpx;
+  height: 80rpx;
+  border: 1px solid gray;
+  margin-left: 30rpx;
+  border-radius: 30rpx;
+}
+.pinglun .tools .fabiao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 150rpx;
+  height: 80rpx;
+  background-color: #c56978;
+  border-radius: 24rpx;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,28 @@
+<!--pages/nearby/nearby.wxml-->
+
+<scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="scrolltolower">
+    <view class="my_add">
+        <view class="conent">
+            <view class="conent-item" 
+                wx:for="{{dataList}}" 
+                wx:key="this" 
+                bind:tap="goDetail" 
+                data-obj="{{item}}">
+                <view class="img">
+                    <image src="{{item.photo}}" />
+                </view>
+                <view class="left">
+                    <view class="title">{{item.name}}</view>
+                    <!-- <view class="jianjie">制作方式：{{item.zhizuo}}</view> -->
+                    <view class="jianjie">人均价格：{{item.price}}</view>
+                    <view class="biaoqian"> {{item.suggest}}</view>
+                </view>
+
+            </view>
+        </view>
+        <view class="wu" wx:if="{{dataList.length==0}}">暂无数据~</view>
+    </view>
+
+
+
+</scroll-view>

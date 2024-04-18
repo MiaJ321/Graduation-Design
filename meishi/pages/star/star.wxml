@@ -1,0 +1,23 @@
+<view class="star">
+
+
+  <!-- 菜品展示 -->
+  <view class="goods">
+    <view
+      class="item"
+      wx:for="{{dataList}}"
+      wx:key="this"
+      bind:tap="goDetail"
+      data-obj="{{item}}"
+    >
+      <image src="{{item.img}}" />
+      <view class="title">{{item.title}}</view>
+    </view>
+  </view>
+  <view wx:if="{{dataList.length==0}}" class="text">暂无收藏~</view>
+
+</view>
+
+
+
+

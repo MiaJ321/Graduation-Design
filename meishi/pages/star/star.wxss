@@ -1,0 +1,36 @@
+.star {
+  width: 750rpx;
+  height: 100vh;
+}
+.star .goods {
+  width: 750rpx;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 66rpx;
+}
+.star .goods .item {
+  width: 330rpx;
+  height: 420rpx;
+  margin-left: 30rpx;
+}
+.star .goods .item image {
+  width: 330rpx;
+  height: 330rpx;
+  border-radius: 30rpx;
+}
+.star .goods .item .title {
+  width: 330rpx;
+  height: 90rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+.star .text {
+  width: 750rpx;
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  margin-top: 100rpx;
+}

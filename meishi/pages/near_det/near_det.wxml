@@ -1,0 +1,51 @@
+<!--pages/near_det/near_det.wxml-->
+<view class="pinglun">
+  <view class="yj_img">
+    <image src="{{obj.photo}}" />
+  </view>
+  <view class="conent">
+    <view class="right">
+      <view class="title">
+        {{obj.name}}
+        人均：￥{{obj.price}}
+      </view>
+      
+      
+      <view class="msg">{{obj.suggest}}</view>
+    </view>
+  </view>
+  <view class="wu" wx:if="{{dataList.length==0}}">暂无用户评论~</view>
+  <view class="title3">共{{100}}条评论</view>
+  <scroll-view
+    scroll-y
+    class="ping"
+    wx:if="{{dataList.length>0}}"
+    bindscrolltolower="scrolltolower"
+  >
+    <view
+      class="item"
+      wx:for="{{dataList}}"
+      wx:key="this"
+    >
+      <view class="left">
+        <view class="name">
+        {{item.user_name}}
+        评分：{{item.star/10}}星
+        {{item.time}}
+        </view>
+        <!-- 评论内容在此 -->
+        <view class="msg " >{{item.comment}}</view>
+      </view>
+      <!-- 可以在这里尝试展开评论 -->
+      
+
+      <view class="right">
+   
+      </view>
+    </view>
+  </scroll-view>
+
+  
+</view>
+
+

@@ -1,0 +1,48 @@
+<view class="detail">
+  <view class="img">
+    <image src="{{obj.img}}" />
+  </view>
+  <view class="content">
+    <view class="title">{{obj.title}}</view>
+    <view class="text">原料：{{obj.yuanliao}}</view>
+    <view class="text">制作：{{obj.zhizuo}}</view>
+    <view class="text">步骤：{{obj.buzhou}}</view>
+    <view class="star">
+      <view class="left">收藏：</view>
+      <view class="img">
+        <image
+          wx:if="{{!is_active}}"
+          bind:tap="addStar"
+          src="../../images/icons/star.png"
+        />
+        <image
+          wx:if="{{is_active}}"
+          bind:tap="delStar"
+          src="../../images/icons/star_color.png"
+        />
+      </view>
+    </view>
+    <view class="pinglun" bind:tap="goPinglun">
+      <view class="title">用户评价</view>
+      <view class="right">
+        <view class="text">{{pinglunNum}}条</view>
+        <image src="../../images/right.png" />
+      </view>
+    </view>
+  </view>
+  <!-- 菜品展示 -->
+  <view class="title2">美食推荐</view>
+  <view class="goods">
+    <view
+      class="item"
+      wx:for="{{dataList}}"
+      wx:key="this"
+      bind:tap="goDetail"
+      data-obj="{{item}}"
+    >
+      <image src="{{item.img}}" />
+      <view class="title">{{item.title}}</view>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,86 @@
+<view class="index">
+  <!-- <view class="banner">  
+     <image src="../../images/banner.jpg" /> 
+   </view> -->
+
+
+
+  <view class="search" bind:tap="goSearch">
+    <van-icon name="search" size="1.5em" />
+    <view class="text">今天想吃点什么？</view>
+  </view>
+  
+ <!-- 轮播图 -->
+<swiper class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#c56978">
+  <swiper-item wx:for="{{swiperList}}" wx:key="id" class="{{cardCur==index?'cur':''}}" >
+    <view class="swiper-item" style="background-image: url({{item.url}});background-size:100% 100%;"> 
+      </view>
+  </swiper-item>
+</swiper>
+
+  <view class="tab">
+    <view
+      class="item"
+      bind:tap="goFenlei"
+      data-index="0"
+    >
+      <image src="../../images/1.png" />
+      <view class="text">早餐</view>
+    </view>
+    <view
+      class="item"
+      bind:tap="goFenlei"
+      data-index="1"
+    >
+      <image src="../../images/2.png" />
+      <view class="text">素食</view>
+    </view>
+    <view
+      class="item"
+      bind:tap="goFenlei"
+      data-index="2"
+    >
+      <image src="../../images/3.png" />
+      <view class="text">荤菜</view>
+    </view>
+    <view
+      class="item"
+      bind:tap="goFenlei"
+      data-index="3"
+    >
+      <image src="../../images/4.png" />
+      <view class="text">汤品</view>
+    </view>
+    <view
+      class="item"
+      bind:tap="goFenlei"
+      data-index="4"
+    >
+      <image src="../../images/5.png" />
+      <view class="text">烘焙</view>
+    </view>
+    <view
+      class="item"
+      bind:tap="goFenlei"
+      data-index="5"
+    >
+      <image src="../../images/6.png" />
+      <view class="text">其他</view>
+    </view>
+  </view>
+  <!-- 菜品展示 -->
+  <view class="goods">
+  <!-- 在此处设置的obj -->
+    <view
+      class="item"
+      wx:for="{{dataList}}"
+      wx:key="this"
+      bind:tap="goDetail"
+      data-obj="{{item}}"
+    >
+      <image src="{{item.img}}" />
+      <view class="title">{{item.title}}</view>
+    </view>
+  </view>
+</view>
+

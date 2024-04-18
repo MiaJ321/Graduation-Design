@@ -1,0 +1,99 @@
+<view class="add">
+  <view class="top">
+    <view class="title">美食名称：</view>
+    <view class="title-text">
+      <input
+        type="text"
+        value="{{title}}"
+        bindinput="getTitle"
+        placeholder="比如：千页豆腐"
+      />
+    </view>
+    <view class="title">美食原料：</view>
+    <view class="title-text">
+      <input
+        type="text"
+        value="{{yuanliao}}"
+        bindinput="getYuanliao"
+        placeholder="比如：豆腐、辣椒"
+      />
+    </view>
+    <view class="title">美食制作方式：</view>
+    <view class="title-text">
+      <input
+        type="text"
+        value="{{zhizuo}}"
+        bindinput="getZzhizuo"
+        placeholder="比如：爆炒"
+      />
+    </view>
+  </view>
+  <view class="money">
+    <view class="title">美食制作步骤：</view>
+    <view class="title-text">
+      <input
+        type="text"
+        value="{{buzhou}}"
+        bindinput="getBuzhou"
+        placeholder="比如：先大火熬制，再小火炖"
+      />
+    </view>
+  </view>
+  <view class="con">
+    <view class="title">美食类型：</view>
+    <van-radio-group value="{{ radio }}" bind:change="onChangeRadio">
+      <van-radio
+        checked-color="#FB6650"
+        custom-class="r"
+        name="0"
+      >早餐
+      </van-radio>
+      <van-radio
+        checked-color="#FB6650"
+        custom-class="r"
+        name="1"
+      >素食
+      </van-radio>
+      <van-radio
+        checked-color="#FB6650"
+        custom-class="r"
+        name="2"
+      >荤菜
+      </van-radio>
+      <van-radio
+        checked-color="#FB6650"
+        custom-class="r"
+        name="3"
+      >汤品
+      </van-radio>
+      <van-radio
+        checked-color="#FB6650"
+        custom-class="r"
+        name="4"
+      >烘焙
+      </van-radio>
+      <van-radio
+        checked-color="#FB6650"
+        custom-class="r"
+        name="5"
+      >其他
+      </van-radio>
+    </van-radio-group>
+  </view>
+  <view class="img">
+    <view class="title">上传美食图片:</view>
+    <view class="imgs" bindtap="changeBigImg">
+      <image src="{{img?img:'../../images/photo.jpg'}}" />
+    </view>
+  </view>
+
+  <view class="btn">
+    <van-button
+      custom-class="bg"
+      type="primary"
+      bind:tap="addBtn"
+    >发 布
+    </van-button>
+  </view>
+</view>
+

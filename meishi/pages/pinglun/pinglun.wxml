@@ -1,0 +1,53 @@
+<view class="pinglun">
+  <view class="yj_img">
+    <image src="{{obj.img}}" />
+  </view>
+  <view class="conent">
+    <view class="img">
+      <image src="{{img}}" />
+    </view>
+    <view class="right">
+      <view class="title">{{name}}</view>
+      <view class="msg">{{obj.title}}</view>
+    </view>
+    <view class="time">{{obj.shijian}}</view>
+  </view>
+  <view class="wu" wx:if="{{dataList.length==0}}">暂无用户评论~</view>
+  <view class="title3">{{dataList.length}}条评论</view>
+  <scroll-view
+    scroll-y
+    class="ping"
+    wx:if="{{dataList.length>0}}"
+  >
+    <view
+      class="item"
+      wx:for="{{dataList}}"
+      wx:key="this"
+    >
+      <image src="{{item.img}}" />
+      <view class="left">
+        <view class="name">{{item.name}}</view>
+        <view class="msg">{{item.title}}</view>
+      </view>
+      <!-- 可以在这里尝试加删除 -->
+      <view class="right">
+        <view class="star">
+        </view>
+        <view class="shijian">{{item.shijian}}</view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 评论输入框 -->
+  <view class="tools">
+    <view class="input">
+      <input
+        bindinput="getInput"
+        placeholder="    请输入..."
+        value="{{msg}}"
+      />
+    </view>
+    <view class="fabiao" bind:tap="add">发表</view>
+  </view>
+</view>
+

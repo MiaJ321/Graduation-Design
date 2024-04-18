@@ -1,0 +1,85 @@
+/* pages/my_com/my_com.wxml.wxss */
+.my_com {
+    width: 750rpx;
+    height: 100vh;
+  }
+  .my_com .conent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 710rpx;
+    margin-left: 20rpx;
+  }
+  .my_com .conent .conent-item {
+    display: flex;
+    width: 710rpx;
+    height: 160rpx;
+    margin-top: 10rpx; 
+    background-color: white;
+    border-radius: 20rpx;
+  }
+ 
+  .my_com .conent .conent-item .left {
+    width: 600rpx;
+    height: 260rpx;
+    font-size: 32rpx;
+    margin-left: 30rpx;
+  }
+  .my_com .conent .conent-item .left .title {
+    margin-top: 25rpx;
+    margin-bottom: 15rpx;
+    /* font-weight: bold; */
+    height: 40rpx;
+    font-size: 32rpx;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+ 
+  .my_com .conent .conent-item .left .biaoqian {
+    display: flex;
+    align-items: center;
+    font-size: 32rpx;
+  }
+  .my_com .conent .conent-item .left .biaoqian .a {
+    margin-right: 20rpx;
+  }
+  .my_com .conent .conent-item .right {
+    height: 200rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30rpx;
+  }
+  .my_com .conent .conent-item .right .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45rpx;
+    margin-right: 20rpx;
+    width: 100rpx;
+    height: 50rpx;
+    font-size: 32rpx;
+    color: white;
+    border-radius: 30rpx;
+    background-color: #c56978;
+  }
+  .my_com .conent .conent-item .item-title {
+    margin: 20rpx 0rpx 0rpx 30rpx;
+    line-height: 80rpx;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .my_com .wu {
+    width: 750rpx;
+    height: 200rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 32rpx;
+  }
+  

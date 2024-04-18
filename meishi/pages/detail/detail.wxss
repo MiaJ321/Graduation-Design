@@ -1,0 +1,125 @@
+.detail {
+  width: 750rpx;
+  height: 100vh;
+  position: relative;
+}
+.detail .img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail .img image {
+  width: 100%;
+}
+.detail .content {
+  width: 690rpx;
+  margin-left: 30rpx;
+  padding-bottom: 42rpx;
+}
+.detail .content .title {
+  font-weight: bold;
+  line-height: 80rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.detail .content .text {
+  font-size: 36rpx;
+  line-height: 60rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  font-size: 32rpx;
+}
+.detail .content .star {
+  width: 690rpx;
+  height: 80rpx;
+  border-bottom: 1rpx solid #EAEAEA;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+}
+.detail .content .star .img {
+  width: 36rpx;
+  height: 36rpx;
+}
+.detail .content .star .img image {
+  width: 100%;
+  height: 100%;
+}
+.detail .content .pinglun {
+  width: 690;
+  height: 80rpx;
+  border-bottom: 1rpx solid #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32rpx;
+}
+.detail .content .pinglun .right {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+.detail .content .pinglun .right image {
+  width: 36rpx;
+  height: 36rpx;
+}
+.detail .btn {
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  width: 750rpx;
+  height: 120rpx;
+}
+.detail .btn .btn-item1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375rpx;
+  height: 120rpx;
+  color: white;
+  background-color: #c56978;
+}
+.detail .btn .btn-item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375rpx;
+  height: 120rpx;
+  color: white;
+  background-color: red;
+}
+.detail .title2 {
+  margin-left: 30rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+.detail .goods {
+  width: 750rpx;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 42rpx;
+}
+.detail .goods .item {
+  width: 330rpx;
+  height: 420rpx;
+  margin-left: 30rpx;
+}
+.detail .goods .item image {
+  width: 330rpx;
+  height: 330rpx;
+  border-radius: 30rpx;
+}
+.detail .goods .item .title {
+  width: 330rpx;
+  height: 90rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 10rpx;
+}

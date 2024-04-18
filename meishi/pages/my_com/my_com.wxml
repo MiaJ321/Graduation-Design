@@ -1,0 +1,31 @@
+<!--pages/my_com/my_com.wxml.wxml-->
+<view class="my_com">
+  <view class="conent">
+    <view
+      class="conent-item"
+      wx:for="{{dataList}}"
+      wx:key="this"
+      data-obj="{{item}}"
+    >
+      
+      <view class="left">
+        <view class="title">评论内容：{{item.title}}</view>
+        <!-- <view class="jianjie">制作方式：{{item.zhizuo}}</view> -->
+        <!-- <view class="jianjie">原料：{{item.}}</view> -->
+        <view class="biaoqian">评论时间：{{item.shijian}}</view>
+      </view>
+      <view class="right">
+        <view
+          class="btn"
+          data-id="{{item.pinglun_id}}"
+          catch:tap="del"
+        >
+          删除
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="wu" wx:if="{{dataList.length==0}}">暂无数据~</view>
+</view>
+
+
