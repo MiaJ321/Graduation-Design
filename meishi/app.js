@@ -7,7 +7,7 @@ App({
    
    // 初始化云开发环境
     wx.cloud.init({
-      env:"sirfuao-4gczpw45e6c4ae20"
+      env:"wx3f39562e9b95718e"
     })
   },
   editTabbar: function () {
