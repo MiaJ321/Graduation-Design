@@ -45,7 +45,7 @@ Page({
     })
   },
 
-  // 删除 存在问题，删不掉
+  // 删除
   del(e){
     console.log(e.currentTarget.dataset.id);
     wx.showModal({
